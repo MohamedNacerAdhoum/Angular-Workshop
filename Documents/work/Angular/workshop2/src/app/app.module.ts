@@ -7,6 +7,11 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { ListCategoriesComponent } from './list-categories/list-categories.component';
+import { HighlighterDirective } from './highlighter.directive';
+import { FormsModule } from '@angular/forms';
+import { SearchPipe } from './search.pipe';
+import { ErrorComponent } from './error/error.component';
+
 
 @NgModule({
   declarations: [
@@ -14,11 +19,15 @@ import { ListCategoriesComponent } from './list-categories/list-categories.compo
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    ListCategoriesComponent
+    ListCategoriesComponent,
+    HighlighterDirective,
+    SearchPipe,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
