@@ -1,5 +1,5 @@
 <div class="container">
-    <input type="text" placeholder="Search" aria-label="Search" [(ngModel)]="titre">
+    <input type="text" placeholder="Search" aria-label="Search" [(ngModel)]="titre" placeholder="Rechercher par titre de catégorie">
 
     <div class="row" >
         <div class="col-md-4" style="margin-bottom: 20px;" *ngFor="let category of categories | search:titre " >
@@ -10,7 +10,8 @@
             (click) = "showDescription(category.description)"
             />
             <h3 appHighlighter>{{category.title | uppercase}}</h3>
-            <button class="btn btn-primary" *ngIf="category.available else alt">Voir produits</button>
+
+            <button *ngIf="category.available else alt" class="btn btn-primary" [routerLink]="['/productCategory',category.id]">Voir produits</button>
             <ng-template #alt><p style="color: red;">category unavalible</p></ng-template>
         </div>
     </div>

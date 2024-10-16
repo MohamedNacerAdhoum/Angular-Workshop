@@ -11,6 +11,7 @@ import { HighlighterDirective } from './highlighter.directive';
 import { FormsModule } from '@angular/forms';
 import { SearchPipe } from './search.pipe';
 import { ErrorComponent } from './error/error.component';
+import { ProductsCategoryComponent } from './products-category/products-category.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { ErrorComponent } from './error/error.component';
     ListCategoriesComponent,
     HighlighterDirective,
     SearchPipe,
-    ErrorComponent
+    ErrorComponent,
+    ProductsCategoryComponent
   ],
   imports: [
     BrowserModule,

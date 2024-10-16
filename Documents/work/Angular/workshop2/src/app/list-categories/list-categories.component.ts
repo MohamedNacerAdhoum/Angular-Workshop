@@ -15,7 +15,7 @@ export class ListCategoriesComponent {
   "available":true},
   {"id":3,"title":"Produits informatiques",
   "image":"assets/images/categorie_produits_informatiques.jpg", "description":"Produits informatiques",
-  "available":true},
+  "available":false},
   {"id":4,"title":"Smart Phones", "image":"assets/images/categorie_smartPhone.jpg",
   "description":"", "available":true},
   {"id":5,"title":"TV, images et son",
